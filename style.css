@@ -1,0 +1,44 @@
+/* Base style for KPI metric box */
+.metric-box {
+  background-color: #f1f3f6;
+  padding: 1.2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect (optional) */
+.metric-box:hover {
+  transform: translateY(-4px);
+}
+
+/* Heading styles inside each metric box */
+.metric-box h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #2e86de;
+}
+
+/* Value text inside each box */
+.metric-box p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #333333;
+}
+
+/* Custom border colors */
+.metric-box.total-cases {
+  border-left: 6px solid #3498db;
+}
+
+.metric-box.total-deaths {
+  border-left: 6px solid #e74c3c;
+}
+
+.metric-box.total-vaccinated {
+  border-left: 6px solid #27ae60;
+}
